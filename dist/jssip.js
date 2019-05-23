@@ -17512,9 +17512,13 @@ function (_EventEmitter) {
         _this3._localMediaStream = stream;
 
         if (stream) {
-          stream.getTracks().forEach(function (track) {
-            _this3._connection.addTrack(track, stream);
-          });
+          if (_this3._connection.addTrack) {
+            stream.getTracks().forEach(function (track) {
+              _this3._connection.addTrack(track, stream);
+            });
+          } else {
+            _this3._connection.addStream(stream);
+          }
         }
       }) // Set remote description.
       .then(function () {
@@ -19157,9 +19161,13 @@ function (_EventEmitter) {
         _this21._localMediaStream = stream;
 
         if (stream) {
-          stream.getTracks().forEach(function (track) {
-            _this21._connection.addTrack(track, stream);
-          });
+          if (_this21._connection.addTrack) {
+            stream.getTracks().forEach(function (track) {
+              _this21._connection.addTrack(track, stream);
+            });
+          } else {
+            _this21._connection.addStream(stream);
+          }
         } // TODO: should this be triggered here?
 
 
