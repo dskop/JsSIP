@@ -1,8 +1,8 @@
 {
-  "name": "@dskop/jssip",
+  "name": "jssip",
   "title": "JsSIP",
   "description": "JsSIP with Microsoft Edge support",
-  "version": "3.4.2",
+  "version": "3.4.3",
   "homepage": "https://jssip.net",
   "author": "José Luis Millán <jmillan@aliax.net> (https://github.com/jmillan)",
   "contributors": [
