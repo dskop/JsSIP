@@ -1,5 +1,5 @@
 {
-  "name": "jssip",
+  "name": "@dskop/jssip",
   "title": "JsSIP",
   "description": "JsSIP with Microsoft Edge support",
   "version": "3.4.3",
